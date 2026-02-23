@@ -1,0 +1,13 @@
+{
+  "name": "ob215/tp-ob215-j1-quiz",
+  "description": "OB215 - TP Jour 1 (Console) - JeuQuiz Legacy",
+  "type": "project",
+  "require": {
+    "php": ">=8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Legacy\\": "src/Legacy/"
+    }
+  }
+}
