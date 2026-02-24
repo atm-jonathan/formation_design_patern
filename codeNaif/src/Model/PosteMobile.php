@@ -3,9 +3,10 @@
 namespace Src\Model;
 
 /**
- * Représente un poste destiné à la data / analyse.
+ * Représente un poste destiné au développement Java.
+ * Les attributs sont simples et servent surtout à afficher des messages cohérents.
  */
-class PosteData implements PosteDeTravail
+class PosteMobile implements PosteDeTravail
 {
     private string $nomPoste;
     private string $os;
@@ -14,16 +15,15 @@ class PosteData implements PosteDeTravail
 
     public function __construct()
     {
-        $this->nomPoste = 'Poste Data';
-        $this->os = 'Ubuntu 24.04';
-        $this->ide = 'JupyterLab';
-        $this->outils = ['Python 3.12', 'pandas', 'numpy', 'Git'];
+        $this->nomPoste = 'Poste Mobile';
+        $this->os = 'Windows 10 Pro';
+        $this->ide = 'PHP storm';
+        $this->outils = ['JDK 22', 'bash'];
     }
     public function installerOS(): void
     {
         echo "[{$this->nomPoste}] Installation du système : {$this->os}" . PHP_EOL;
     }
-
     public function installerIDE(): void
     {
         echo "[{$this->nomPoste}] Installation de l'IDE / outils : {$this->ide}" . PHP_EOL;
@@ -34,7 +34,6 @@ class PosteData implements PosteDeTravail
         echo "[{$this->nomPoste}] Configuration de l'environnement Data : "
             . implode(', ', $this->outils) . PHP_EOL;
     }
-
     public function livrer(): void
     {
         echo "[{$this->nomPoste}] Poste prêt et livré au développeur." . PHP_EOL;

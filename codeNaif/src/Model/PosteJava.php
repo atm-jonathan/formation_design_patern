@@ -20,23 +20,20 @@ class PosteJava implements PosteDeTravail
         $this->ide = 'IntelliJ IDEA Community';
         $this->outils = ['JDK 17', 'Maven', 'Git'];
     }
-
     public function installerOS(): void
     {
         echo "[{$this->nomPoste}] Installation du système : {$this->os}" . PHP_EOL;
     }
-
     public function installerIDE(): void
     {
-        echo "[{$this->nomPoste}] Installation de l'IDE : {$this->ide}" . PHP_EOL;
+        echo "[{$this->nomPoste}] Installation de l'IDE / outils : {$this->ide}" . PHP_EOL;
     }
 
     public function configurer(): void
     {
-        echo "[{$this->nomPoste}] Configuration de l'environnement Java : "
+        echo "[{$this->nomPoste}] Configuration de l'environnement Data : "
             . implode(', ', $this->outils) . PHP_EOL;
     }
-
     public function livrer(): void
     {
         echo "[{$this->nomPoste}] Poste prêt et livré au développeur." . PHP_EOL;

@@ -3,7 +3,6 @@
 namespace Src\Singleton;
 
 class ConfigurationEntreprise {
-    // 1. Propriétés d'instance (propres à l'objet créé)
     private string $nomEntreprise;
     private string $proxy;
     private string $depotInterne;
@@ -28,7 +27,6 @@ class ConfigurationEntreprise {
     }
     public function afficherConfiguration(): string {
         $out = "### CONFIGURATION SYSTÈME ###\n";
-        // On utilise $this-> car l'instance existe maintenant
         $out .= "Entreprise : " . $this->nomEntreprise . "\n";
         $out .= "Proxy : " . ($this->proxy ?: "Aucun") . "\n";
         $out .= "Dépôt Interne : " . $this->depotInterne . "\n";
