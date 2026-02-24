@@ -2,7 +2,8 @@
 declare(strict_types=1);
 
 require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../src/Controlleur/PartieControlleur.php';
 
-use Legacy\JeuQuizLegacy;
+use Controlleur\PartieControlleur;
 
-JeuQuizLegacy::main();
+PartieControlleur::Jouer();

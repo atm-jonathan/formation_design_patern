@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Legacy;
+namespace Modele;
 
 final class Joueur
 {
